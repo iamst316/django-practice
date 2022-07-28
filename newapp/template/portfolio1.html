@@ -1,12 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+{% load static %}
 <div id="ajax-page" class="ajax-page-content">
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
             <div class="nav-item ajax-page-prev-next">
-                <a class="ajax-page-load" href="portfolio-3.html"><i class="lnr lnr-chevron-left"></i></a>
-                <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>
+                <a class="ajax-page-load" href=' {% static "portfolio-3.html" %}'><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href=' {% static "portfolio-2.html" %}'><i class="lnr lnr-chevron-right"></i></a>
             </div>
             <div class="nav-item ajax-page-close-button">
-                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+                <a id="ajax-page-close-button" href=' {% static "#" %}'><i class="lnr lnr-cross"></i></a>
             </div>
         </div>
 
@@ -18,18 +21,18 @@
             <div class="col-sm-8 col-md-8 portfolio-block">
                 <div class="owl-carousel portfolio-page-carousel">
                     <div class="item">
-                        <img src="img/portfolio/full/1.jpg" alt="" />
+                        <img src=' {% static "img/portfolio/full/1.jpg" %}' alt="" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/2.jpg" alt="" />
+                        <img src=' {% static "img/portfolio/full/2.jpg" %}' alt="" />
                     </div>
                     <div class="item">
-                        <img src="img/portfolio/full/3.jpg" alt="" />
+                        <img src=' {% static "img/portfolio/full/3.jpg" %}' alt="" />
                     </div>
                 </div>
 
                 <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
+                  <iframe class="embed-responsive-item" src=' {% static "https://player.vimeo.com/video/97102654?autoplay=0" %}'></iframe>
                 </div>
 
                 <script type="text/javascript">
@@ -58,7 +61,7 @@
                     </div>
                     <ul class="project-general-info">
                         <li><p><i class="fa fa-user"></i> Alex Smith</p></li>
-                        <li><p><i class="fa fa-globe"></i> <a href="#" target="_blank">www.project-site.com</a></p></li>
+                        <li><p><i class="fa fa-globe"></i> <a href=' {% static "#" %}' target="_blank">www.project-site.com</a></p></li>
                         <li><p><i class="fa fa-calendar"></i> 25 december, 2016</p></li>
                     </ul>
 
@@ -85,9 +88,9 @@
                         <div class="block-title">
                             <h3>Share</h3>
                         </div>
-                        <a href="#" target="_blank" class="btn"><i class="fab fa-facebook-f"></i> </a>
-                        <a href="#" target="_blank" class="btn"><i class="fab fa-twitter"></i> </a>
-                        <a href="#" target="_blank" class="btn"><i class="fab fa-dribbble"></i> </a>
+                        <a href=' {% static "#" %}' target="_blank" class="btn"><i class="fab fa-facebook-f"></i> </a>
+                        <a href=' {% static "#" %}' target="_blank" class="btn"><i class="fab fa-twitter"></i> </a>
+                        <a href=' {% static "#" %}' target="_blank" class="btn"><i class="fab fa-dribbble"></i> </a>
                     </div>
                     <!-- /Share Buttons -->
                 </div>
